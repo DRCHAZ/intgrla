@@ -19,7 +19,7 @@ services:
       redis:
         condition: service_started
   postgres:
-    image: postgres:16-alpine
+    image: postgres
     restart: always
     user: ${DB_USER}
     volumes:
